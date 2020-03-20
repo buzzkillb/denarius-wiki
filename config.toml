@@ -1,0 +1,38 @@
+baseURL = "https://denarius.wiki/"
+languageCode = "en-us"
+title = "Denarius Wiki"
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+googleAnalytics = "UA-161502110-1"
+
+relativeurls = true
+social_banner = "/images/denarius-logo.png"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+# Change default color scheme with a variant one. Can be "red", "blue", "green".
+themeVariant = "denarius"
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-fire'></i>Denarius Homepage"
+identifier = "d-homepage"
+url = "https://denarius.io"
+weight = 5
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-discord'></i>Discord"
+url = "https://discord.gg/JQEmXwb"
+weight = 10
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-twitter'></i>Twitter"
+url = "https://twitter.com/denariuscoin"
+weight = 10
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-cube'></i>IPFS Gateway"
+url = "https://gateway.ipfs.io/ipns/denarius.wiki/"
+weight = 20
