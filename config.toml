@@ -17,6 +17,12 @@ home = [ "HTML", "RSS", "JSON"]
 themeVariant = "denarius"
 
 [[menu.shortcuts]] 
+name = "<i class='fab fa-github'></i>Github Repo"
+identifier = "d-wiki"
+url = "https://github.com/buzzkillb/denarius-wiki"
+weight = 1
+
+[[menu.shortcuts]] 
 name = "<i class='fas fa-fire'></i>Denarius Homepage"
 identifier = "d-homepage"
 url = "https://denarius.io"
