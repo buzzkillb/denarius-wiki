@@ -114,3 +114,41 @@ qmake "USE_UPNP=1" "USE_QRCODE=1" LIBS=-lboost_chrono OPENSSL_INCLUDE_PATH=/usr/
 make
 ./Denarius
 ```
+
+### Ubuntu 20.04
+
+#### QT
+```
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get install -y git unzip build-essential libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev libevent-dev autogen automake  libtool libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools qt5-default zlib1g-dev jq libcurl4-openssl-dev
+
+sudo apt-get install make
+wget https://www.openssl.org/source/openssl-1.0.1j.tar.gz
+tar -xzvf openssl-1.0.1j.tar.gz
+cd openssl-1.0.1j
+./config
+make depend
+make
+sudo make install
+sudo ln -sf /usr/local/ssl/bin/openssl `which openssl`
+cd ~
+openssl version -v
+
+sudo apt-get install libbz2-dev
+wget -O boost_1_55_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz/download
+tar xzvf boost_1_55_0.tar.gz
+cd boost_1_55_0/
+./bootstrap.sh --prefix=/usr/local
+./b2
+sudo ./b2 install
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/boost.conf'
+sudo ldconfig
+
+git clone https://github.com/carsenk/denarius
+cd denarius
+git checkout master
+git pull
+qmake "USE_UPNP=1" "USE_QRCODE=1" BOOST_LIB_PATH=/usr/local/lib LIBS=-lboost_chrono OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib denarius-qt.pro
+make
+./Denarius
+```
