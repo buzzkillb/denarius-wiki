@@ -17,7 +17,7 @@ Then unzip the **chaindata.zip** file to your Denarius data directory.
 
 | OS | Data Directory |
 | ------ | ----------- |
-| Windows | C:/Users/yourname/AppData/Roaming/Denarius |
+| Windows | %APPDATA%\Denarius |
 | macOS | /Library/Application Support/Denarius |
 | Linux | ~/.denarius/ |
 
