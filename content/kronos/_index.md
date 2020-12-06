@@ -19,3 +19,5 @@ https://github.com/carsenk/kronos/releases
 ![kronos logo](kronos-logo.png)
 
 ![kronos dashboard](kronos-dashboard-core.PNG)
+
+![kronos chat](kronos-dashboard-chat.PNG)
