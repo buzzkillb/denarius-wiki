@@ -17,3 +17,5 @@ Supports D, BTC, ETH, and ARI. More coming!
 https://github.com/carsenk/kronos/releases  
 
 ![kronos logo](kronos-logo.png)
+
+![kronos dashboard](kronos-dashboard-core.PNG)
