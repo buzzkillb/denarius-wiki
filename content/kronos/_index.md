@@ -1,6 +1,6 @@
 +++
 title = "Kronos"
-date = 2020-12-05T22:46:54-08:00
+date = 2020-12-04T22:46:54-08:00
 weight = 3
 chapter = true
 pre = "<b></b>"
