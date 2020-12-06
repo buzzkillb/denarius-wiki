@@ -14,6 +14,6 @@ A Dashboard Interface and Wallet for Denarius (D), Bitcoin (BTC), Ethereum (ETH)
 
 Supports D, BTC, ETH, and ARI. More coming!  
 
-Get Kronos! github.com/carsenk/kronos/releases  
+https://github.com/carsenk/kronos/releases  
 
 ![kronos logo](kronos-logo.png)
