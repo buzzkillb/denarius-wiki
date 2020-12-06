@@ -20,4 +20,4 @@ https://github.com/carsenk/kronos/releases
 
 ![kronos dashboard](kronos-dashboard-core.PNG)
 
-![kronos chat](kronos-dashboard-chat.PNG)
+![kronos chat_version1.8.7](kronos-dashboard-chat187.PNG)
