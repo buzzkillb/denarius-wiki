@@ -2,7 +2,7 @@
 title: "Compile"
 date: 2020-03-05T00:17:05-08:00
 ---
-## How to compile QT and daemon on various versions of Ubuntu.
+## How to compile QT and daemon on Ubuntu and Fedora
 
 ### Ubuntu 16.04
 
@@ -159,4 +159,80 @@ git pull
 qmake "USE_UPNP=1" "USE_QRCODE=1" BOOST_INCLUDE_PATH=/usr/local/include/boost BOOST_LIB_PATH=/usr/local/lib LIBS=-lboost_chrono OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib denarius-qt.pro
 make
 ./Denarius
+```
+
+### Fedora
+
+#### Fedora Daemon
+```
+sudo dnf update
+sudo dnf install make automake gcc gcc-c++ kernel-devel boost-devel libtool zlib-devel libevent-devel libcurl-devel libdb-devel libdb-cxx-devel miniupnpc miniupnpc-devel
+
+sudo apt-get install make
+wget https://ftp.openssl.org/source/old/1.0.1/openssl-1.0.1j.tar.gz
+tar -xzvf openssl-1.0.1j.tar.gz
+cd openssl-1.0.1j
+./config
+make depend
+make
+sudo make install
+sudo ln -sf /usr/local/ssl/bin/openssl `which openssl`
+cd ~
+openssl version -v
+
+wget -O boost_1_58_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz/download
+tar xzvf boost_1_58_0.tar.gz
+cd boost_1_58_0/
+./bootstrap.sh --prefix=/usr/local
+./b2
+sudo ./b2 install
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/boost.conf'
+sudo ldconfig
+cd ~
+
+git clone https://github.com/carsenk/denarius
+cd denarius
+git checkout 2020
+git pull
+cd src
+BOOST_INCLUDE_PATH=/usr/local/include/boost BOOST_LIB_PATH=/usr/local/lib OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib make -f makefile.unix
+sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
+denariusd
+```
+
+#### Fedora QT
+```
+sudo dnf update
+sudo dnf install make automake gcc gcc-c++ kernel-devel boost-devel libtool zlib-devel libevent-devel libcurl-devel libdb-devel libdb-cxx-devel miniupnpc miniupnpc-devel qt5-qtbase qt5-qtbase-devel qt5-qttools qt5-qttools-devel qt5-qttools-common qrencode-devel protobuf-devel
+
+sudo apt-get install make
+wget https://ftp.openssl.org/source/old/1.0.1/openssl-1.0.1j.tar.gz
+tar -xzvf openssl-1.0.1j.tar.gz
+cd openssl-1.0.1j
+./config
+make depend
+make
+sudo make install
+sudo ln -sf /usr/local/ssl/bin/openssl `which openssl`
+cd ~
+openssl version -v
+
+wget -O boost_1_58_0.tar.gz https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz/download
+tar xzvf boost_1_58_0.tar.gz
+cd boost_1_58_0/
+./bootstrap.sh --prefix=/usr/local
+./b2
+sudo ./b2 install
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/boost.conf'
+sudo ldconfig
+cd ~
+
+git clone https://github.com/carsenk/denarius
+cd denarius
+git checkout 2020
+git pull
+qmake-qt5 "USE_UPNP=1" "USE_QRCODE=1" BOOST_INCLUDE_PATH=/usr/local/include/boost BOOST_LIB_PATH=/usr/local/lib OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib denarius-qt.pro
+make
+sudo mv ~/denarius/Denarius /usr/local/bin/Denarius
+Denarius
 ```
