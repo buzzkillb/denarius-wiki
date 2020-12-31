@@ -168,7 +168,6 @@ make
 sudo dnf update
 sudo dnf install make automake gcc gcc-c++ kernel-devel boost-devel libtool zlib-devel libevent-devel libcurl-devel libdb-devel libdb-cxx-devel miniupnpc miniupnpc-devel
 
-sudo apt-get install make
 wget https://ftp.openssl.org/source/old/1.0.1/openssl-1.0.1j.tar.gz
 tar -xzvf openssl-1.0.1j.tar.gz
 cd openssl-1.0.1j
@@ -205,7 +204,6 @@ denariusd
 sudo dnf update
 sudo dnf install make automake gcc gcc-c++ kernel-devel boost-devel libtool zlib-devel libevent-devel libcurl-devel libdb-devel libdb-cxx-devel miniupnpc miniupnpc-devel qt5-qtbase qt5-qtbase-devel qt5-qttools qt5-qttools-devel qt5-qttools-common qrencode-devel protobuf-devel
 
-sudo apt-get install make
 wget https://ftp.openssl.org/source/old/1.0.1/openssl-1.0.1j.tar.gz
 tar -xzvf openssl-1.0.1j.tar.gz
 cd openssl-1.0.1j
