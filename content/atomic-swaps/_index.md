@@ -7,7 +7,7 @@ pre = "<b></b>"
 +++
 
 ### Cross-Chain Atomic Swaps
-Denarius also features atomic swaps on its blockchain! You can now use BEAM (In Wallet Decentralized Exchange) to buy or sell D atomically via an atomic swap without any 3rd parties!
+Denarius also features atomic swaps on its blockchain! You can now use BlockDX (Decentralized Exchange) to buy or sell D atomically via an atomic swap without any 3rd parties! https://blockdx.com/
 
 "An atomic swap is a direct trade between two different coins running on two separate blockchains; there are no centralized-exchange websites or other third-parties required for this trade. The technology enables common users to bypass the labyrinth of website-exchanges currently necessary to purchase cryptocurrencies. Once implemented, the atomic swap will allow common users to trade and purchase any desired coin directly within their own wallets." -- Komodo AtomicLabs BarterDEX/HyperDEX
 
