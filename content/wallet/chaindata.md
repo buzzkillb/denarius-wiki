@@ -19,7 +19,8 @@ Then unzip the **chaindata.zip** file to your Denarius data directory.
 | ------ | ----------- |
 | Windows | %APPDATA%\Denarius |
 | macOS | /Library/Application Support/Denarius |
-| Linux | ~/.denarius/ |
+| Linux | ~/.denarius |
+| Snap | ~/snap/denarius/common/.denarius |
 
 #### Unzip Windows
 ![Image](https://denariustalk.org/uploads/monthly_2018_03/roaming-folder.png.077148e27eb63de46e21e45a6f52dbfd.png)
