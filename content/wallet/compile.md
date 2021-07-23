@@ -200,6 +200,7 @@ OPENSSL_LIB_PATH=/usr/lib/openssl-1.0 OPENSSL_INCLUDE_PATH=/usr/include/openssl-
 sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
 denariusd
 ```
+
 #### Arch Linux QT
 ```
 sudo pacman -Syu miniupnpc libevent openssl-1.0 boost-libs libcurl-compat qt5-base qt5-tools protobuf qrencode miniupnpc
