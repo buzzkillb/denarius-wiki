@@ -10,6 +10,7 @@ pre = "<i class='fab fa-github'></i> "
 
 | Version | Date |  |
 | ------ | ----| ----------- |
+| 3.3.9.13 | June 10, 2021 | [https://github.com/carsenk/denarius/releases/tag/v3.3.9.13](https://github.com/carsenk/denarius/releases/tag/v3.3.9.13)|
 | 3.3.9.12 | June 3, 2021 | [https://github.com/carsenk/denarius/releases/tag/v3.3.9.12](https://github.com/carsenk/denarius/releases/tag/v3.3.9.12)|
 | 3.3.9.8 | September 9, 2020 | [https://github.com/carsenk/denarius/releases/tag/v3.3.9.8](https://github.com/carsenk/denarius/releases/tag/v3.3.9.8)|
 | 3.3.9.7 | Feb 7, 2020 | [https://github.com/carsenk/denarius/releases/tag/v3.3.9.7](https://github.com/carsenk/denarius/releases/tag/v3.3.9.7)|
