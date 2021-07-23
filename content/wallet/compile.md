@@ -200,3 +200,14 @@ OPENSSL_LIB_PATH=/usr/lib/openssl-1.0 OPENSSL_INCLUDE_PATH=/usr/include/openssl-
 sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
 denariusd
 ```
+#### Arch Linux QT
+```
+sudo pacman -Syu miniupnpc libevent openssl-1.0 boost-libs libcurl-compat qt5-base qt5-tools protobuf qrencode miniupnpc
+
+git clone https://github.com/carsenk/denarius
+cd denarius
+qmake "USE_UPNP=1" "USE_QRCODE=1" OPENSSL_LIB_PATH=/usr/lib/openssl-1.0 OPENSSL_INCLUDE_PATH=/usr/include/openssl-1.0 make "USE_NATIVETOR=-"  denarius-qt.pro
+make
+sudo mv ~/denarius/Denarius /usr/local/bin/Denarius
+denariusd
+```
