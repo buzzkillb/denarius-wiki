@@ -108,8 +108,6 @@ openssl version -v
 
 git clone https://github.com/carsenk/denarius
 cd denarius
-git checkout newddns
-git pull
 cd src
 OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib make -f makefile.unix
 sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
@@ -135,8 +133,6 @@ openssl version -v
 
 git clone https://github.com/carsenk/denarius
 cd denarius
-git checkout newddns
-git pull
 qmake "USE_UPNP=1" "USE_QRCODE=1" OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib denarius-qt.pro
 make
 ./Denarius
@@ -162,8 +158,6 @@ openssl version -v
 
 git clone https://github.com/carsenk/denarius
 cd denarius
-git checkout newddns
-git pull
 cd src
 OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib make -f makefile.unix
 sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
@@ -188,10 +182,21 @@ openssl version -v
 
 git clone https://github.com/carsenk/denarius
 cd denarius
-git checkout newddns
-git pull
 qmake-qt5 "USE_UPNP=1" "USE_QRCODE=1" OPENSSL_INCLUDE_PATH=/usr/local/ssl/include OPENSSL_LIB_PATH=/usr/local/ssl/lib denarius-qt.pro
 make
 sudo mv ~/denarius/Denarius /usr/local/bin/Denarius
 Denarius
+```
+### Arch Linux
+
+#### Arch Linux Daemon
+```
+sudo pacman -Syu miniupnpc libevent openssl-1.0 boost-libs libcurl-compat
+
+git clone https://github.com/carsenk/denarius
+cd denarius
+cd src
+OPENSSL_LIB_PATH=/usr/lib/openssl-1.0 OPENSSL_INCLUDE_PATH=/usr/include/openssl-1.0 make "USE_NATIVETOR=-" -f makefile.unix
+sudo mv ~/denarius/src/denariusd /usr/local/bin/denariusd
+denariusd
 ```
