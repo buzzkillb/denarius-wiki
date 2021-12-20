@@ -6,7 +6,4 @@ chapter = true
 +++
 ### About Denarius Cryptocurrency
 
-### Carsen Klock
-#### Lead Developer and Creator of Denarius
-
-Developer, designer, and technology professional
+### Bitcoin Fork - POW/PoS Hybrid
