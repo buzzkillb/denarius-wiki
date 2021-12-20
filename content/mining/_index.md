@@ -11,7 +11,7 @@ pre = "<b></b>"
 # Proof of Work (POW)
 
 Block Reward Structure  
-https://github.com/carsenk/denarius/blob/eca0b705e748d62f93473be52893d07eec3be6b7/src/main.cpp#L1641
+https://github.com/metaspartan/denarius/blob/eca0b705e748d62f93473be52893d07eec3be6b7/src/main.cpp#L1641
 ```
         if (pindexBest->nHeight == 1)
             nSubsidy = 1000000 * COIN;  // 10% Premine
