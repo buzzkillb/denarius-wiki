@@ -16,7 +16,6 @@ Hashtags [$D](https://twitter.com/search?q=%24D&src=typd) [#Denariuscoin](https:
 [Slack](https://denarius.slack.com/join/shared_invite/enQtMjUzODQ0NzcxMjk2LWRmNTU0NzgyZjYzODE3Y2EzNDc4NzA4ZGY2YjhhMjFiNTIzMGQ5YTc3MTJjZDkxOGJkMDFkMGFmZjcxOWM3YWU)  
 [Telegram](https://t.me/joinchat/DPOfJg6YO86vtiH-Srfl8Q)  
 [Official Twitter](https://twitter.com/denariuscoin)  
-[https://twitter.com/carsenjk](https://twitter.com/carsenjk)  
 [https://twitter.com/thenkse](https://twitter.com/thenkse)  
 [https://twitter.com/dnr_ticker](https://twitter.com/dnr_ticker)  
 [https://twitter.com/denariibot](https://twitter.com/denariibot)  
